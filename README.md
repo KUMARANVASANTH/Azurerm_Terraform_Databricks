@@ -97,9 +97,7 @@ resource "databricks_cluster" "databrick-cluster" {
 }
 ```
 This section configures the Databricks cluster with specific settings, including node type, Spark version, and autoscaling parameters.
-
 # Running the Deployment
-
 ## Initialize Terraform:
 ```bash
 terraform init
@@ -108,3 +106,15 @@ terraform init
 ```bash
 terraform plan
 ```
+## Apply the Configuration:
+```bash
+terraform apply
+```
+You will be prompted to confirm the changes. Type yes to proceed with the deployment.
+## Destroy Resources (Optional):
+If you want to destroy the deployed resources, you can use the following command:
+```bash
+terraform destroy
+```
+# Conclusion
+This Terraform configuration provides a foundation for deploying an Azure Databricks workspace and cluster. Feel free to customize the configuration based on your specific requirements. For more details on Terraform commands and configurations, refer to the Terraform documentation.
